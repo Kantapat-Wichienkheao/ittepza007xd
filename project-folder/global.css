@@ -1,0 +1,81 @@
+/* ===== รีเซ็ตเบื้องต้น ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* ===== แถบด้านบน ===== */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 1000;
+}
+
+/* ===== ปุ่ม Home ===== */
+.home-icon img {
+  width: 36px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.home-icon img:hover {
+  transform: scale(1.1);
+}
+
+/* ===== ปุ่ม Hamburger ===== */
+.hamburger img {
+  width: 32px;
+  height: auto;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.hamburger img:hover {
+  opacity: 0.7;
+}
+
+/* ===== เมนูแบบ Slide-out (ถ้ามี) ===== */
+.menu-panel {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.menu-panel.open {
+  right: 0;
+}
+
+/* ===== Responsive สำหรับมือถือ ===== */
+@media (max-width: 600px) {
+  .top-bar {
+    padding: 10px 16px;
+  }
+
+  .home-icon img,
+  .hamburger img {
+    width: 28px;
+  }
+
+  .menu-panel {
+    width: 80%;
+  }
+}
