@@ -200,6 +200,8 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 16px rgba(59,132,158, 0.10);
   background: #fff;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 .skills-section {
   margin-top: 1.5rem;
@@ -232,8 +234,8 @@ body {
   min-width: 110px;
 }
 .hard-skill-img {
-  width: 70px;
-  height: 70px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   margin-bottom: 0.7rem;
   background: #fff;
