@@ -103,14 +103,6 @@ body {
   margin-top: 1.2rem;
   margin-bottom: 0.2rem;
 }
-.container {
-  max-width: 800px;
-  margin: 2.5rem auto;
-  background: rgba(255,255,255,0.95);
-  border-radius: 18px;
-  box-shadow: 0 6px 30px rgba(59,132,158, 0.12);
-  padding: 3rem 2.2rem;
-}
 .section-title {
   font-size: 2.4rem;
   font-weight: 700;
