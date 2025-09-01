@@ -126,8 +126,8 @@ body {
   align-items: center;
 }
 .work-img-wrap {
-  width: 220px;
-  height: 220px;
+  width: 350px;
+  height: 300px;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 2px 14px rgba(59,132,158, 0.12);
