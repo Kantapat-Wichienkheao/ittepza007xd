@@ -46,8 +46,8 @@ body {
   flex-wrap: wrap;
 }
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 230px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 2px 20px rgba(59,132,158,0.12);
@@ -66,31 +66,31 @@ body {
 }
 .school-logo {
   width: 80px;
-  margin: 0.5rem 0;
+  margin: 3rem 0;
 }
 .school-text {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   color: #2c5b6e;
   font-weight: 500;
 }
 .quote {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-style: italic;
   color: #222;
-  margin: 1rem 0 0.5rem 0;
+  margin: 1.5rem 0 0rem 0;
   text-shadow: 1px 1px 0 rgba(59,132,158,0.06);
 }
 .motto {
   color: #d52c2c;
   font-weight: bold;
   font-size: 1.17rem;
-  margin: 0.7rem 0 1.1rem 0;
+  margin: 2rem 0 1rem 0;
   text-align: center;
   letter-spacing: 1px;
   text-shadow: 1px 1px 0 #fff, 2px 2px 0 #ccf2ff;
 }
 .about-text {
-  font-size: 1.05rem;
+  font-size: 1.464rem;
   color: #222;
   line-height: 1.7;
   margin-top: 1.2rem;
