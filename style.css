@@ -40,7 +40,8 @@ body {
   box-shadow: 0 6px 30px rgba(59,132,158, 0.12);
   padding: 3rem 2.2rem;
 }
-.profile-section {
+//หน้าแรก
+.profile-section { 
   display: flex;
   align-items: flex-start;
   gap: 2.5rem;
@@ -107,6 +108,7 @@ body {
   margin-top: 1.2rem;
   margin-bottom: 0.2rem;
 }
+//หน้าผลงาน
 .section-title {
   font-size: 2.4rem;
   font-weight: 700;
@@ -176,6 +178,7 @@ body {
   line-height: 2.3;
   margin-top: 0.8rem;
 }
+//ประสบการณ์และทักษะ
 .exp-container {
   background: #e3f7ff;
   box-shadow: 0 6px 30px rgba(59,132,158, 0.10);
@@ -257,6 +260,86 @@ body {
   margin-left: 2.2rem;
   line-height: 2.2;
   list-style: disc inside;
+}
+//หน้าติดต่อ
+.contact-container {
+  background: #e3f7ff;
+  box-shadow: 0 6px 30px rgba(59,132,158, 0.10);
+}
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3b849e;
+  margin-bottom: 2.2rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.map-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.contact-map-img {
+  width: 370px;
+  max-width: 95%;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(59,132,158,0.10);
+  border: 2px solid #bce6f8;
+}
+.map-desc {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #3b849e;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+.contact-info-box {
+  background: #b9e4f7;
+  border-radius: 22px;
+  padding: 1.5rem 2.2rem;
+  margin: 0 auto;
+  max-width: 480px;
+  box-shadow: 0 2px 18px rgba(59,132,158,0.11);
+}
+.contact-info-main {
+  font-size: 1.22rem;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.contact-name {
+  font-weight: 600;
+  font-size: 1.23rem;
+  margin-bottom: 0.5rem;
+  color: #1c5e81;
+  text-align: center;
+}
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.12rem;
+  flex-wrap: wrap;
+}
+.contact-icon {
+  width: 27px;
+  height: 27px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 2px 7px rgba(59,132,158,0.07);
+  margin-right: 0.25rem;
+}
+.contact-info-box a {
+  color: #217198;
+  text-decoration: none;
+  font-weight: 500;
+}
+.contact-info-box a:hover {
+  text-decoration: underline;
 }
 @media (max-width: 600px) {
   .container {
