@@ -48,8 +48,8 @@ body {
   flex-wrap: wrap;
 }
 .profile-img {
-  width: 170px;
-  height: 170px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 2px 20px rgba(59,132,158,0.12);
@@ -67,29 +67,31 @@ body {
   color: #3b849e;
   line-height: 1.4;
 }
-.school-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0.7rem 0;
-}
 .school-logo {
   width: 130px;
-  margin-bottom: 0.5rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  margin-left: 2.5rem;
+  margin-left: 8rem;
+  margin-right: 2.5rem;
+  display: block;
 }
 .school-text {
-  font-size: 1.25rem;
+  font-size: 1.30rem;
+  font-size: 1.50rem;
   color: #2c5b6e;
   font-weight: 500;
   margin-bottom: 0.2rem;
+  margin-left: 2.5rem;
   line-height: 1.7;
-  text-align: center;
 }
 .quote {
   font-size: 1.28rem;
+  font-size: 1.45rem;
   font-style: italic;
   color: #222;
   margin: 1.2rem 0 0.7rem 0;
+  margin-left: 2.5rem;
   text-shadow: 1px 1px 0 rgba(59,132,158,0.06);
   line-height: 1.8;
 }
@@ -110,14 +112,6 @@ body {
   margin-top: 1.2rem;
   margin-bottom: 0.2rem;
 }
-.about-text {
-  font-size: 1.20rem;
-  color: #222;
-  line-height: 2.1;
-  margin-top: 1.2rem;
-  margin-bottom: 0.2rem;
-}
-//หน้าผลงาน
 .section-title {
   font-size: 2.4rem;
   font-weight: 700;
@@ -187,7 +181,6 @@ body {
   line-height: 2.3;
   margin-top: 0.8rem;
 }
-//ประสบการณ์และทักษะ
 .exp-container {
   background: #e3f7ff;
   box-shadow: 0 6px 30px rgba(59,132,158, 0.10);
@@ -270,7 +263,6 @@ body {
   line-height: 2.2;
   list-style: disc inside;
 }
-//หน้าติดต่อ
 .contact-container {
   background: #e3f7ff;
   box-shadow: 0 6px 30px rgba(59,132,158, 0.10);
