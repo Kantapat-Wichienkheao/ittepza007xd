@@ -8,11 +8,20 @@
   <link rel="stylesheet" href="style.css">
 <header class="navbar">
   <span class="logo">Portfolio</span>
-  <!-- ปุ่ม hamburger ใช้รูปภาพที่คุณเตรียมไว้ -->
   <button class="hamburger" id="hamburger-btn">
     <img src="IMG/hamburger-icon.png" alt="เมนู" class="hamburger-img">
   </button>
 </header>
+<!-- เมนูแถบเลื่อนออกด้านซ้าย (side menu) -->
+<nav id="side-menu" class="side-menu">
+  <button id="close-menu" class="close-menu">×</button>
+  <a href="index.html">หน้าแรก</a>
+  <a href="portfolio.html">ผลงาน</a>
+  <a href="experience.html">ประสบการณ์ & ทักษะ</a>
+  <a href="contact.html">ติดต่อ</a>
+  <a href="honor.html">เกียรติประวัติ</a>
+</nav>
+<div id="menu-overlay" class="menu-overlay"></div>
   <main class="container honor-container">
     <h2 class="section-title honor-title">เกียรติประวัติ</h2>
     <div class="honor-list">
@@ -44,8 +53,32 @@
     </div>
   </main>
   <script>
-  document.getElementById('hamburger-btn').addEventListener('click', function() {
-    window.location.href = "menu.html"; // ไปหน้ารายการเมนู (menu.html)
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const sideMenu = document.getElementById('side-menu');
+  const closeMenu = document.getElementById('close-menu');
+  const overlay = document.getElementById('menu-overlay');
+
+  hamburgerBtn.addEventListener('click', function() {
+    sideMenu.classList.add('show');
+    overlay.classList.add('show');
+  });
+
+  closeMenu.addEventListener('click', function() {
+    sideMenu.classList.remove('show');
+    overlay.classList.remove('show');
+  });
+
+  overlay.addEventListener('click', function() {
+    sideMenu.classList.remove('show');
+    overlay.classList.remove('show');
+  });
+
+  // ปิดด้วย esc
+  document.addEventListener('keydown', function(e) {
+    if (e.key === "Escape") {
+      sideMenu.classList.remove('show');
+      overlay.classList.remove('show');
+    }
   });
 </script>
 </body>
