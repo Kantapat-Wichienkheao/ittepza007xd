@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>หน้าแรก | นายกันตพัฒน์ วิเชียรเขียว</title>
+  <title>Portfolio | นายกันตพัฒน์ วิเชียรเขียว</title>
   <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="navbar">
-  <span class="logo">Portfolio</span>
-  <button class="hamburger" id="hamburger-btn">
-    <img src="IMG/hamburger-icon.png" alt="เมนู" class="hamburger-img">
-  </button>
-</header>
-<!-- เมนูแถบเลื่อนออกด้านซ้าย (side menu) -->
-<nav id="side-menu" class="side-menu">
-  <button id="close-menu" class="close-menu">×</button>
-  <a href="index.html">หน้าแรก</a>
-  <a href="portfolio.html">ผลงาน</a>
-  <a href="experience.html">ประสบการณ์ & ทักษะ</a>
-  <a href="contact.html">ติดต่อ</a>
-  <a href="honor.html">เกียรติประวัติ</a>
-</nav>
-<div id="menu-overlay" class="menu-overlay"></div>
-  <main class="container">
+    <span class="logo">Portfolio</span>
+    <button class="hamburger" id="hamburger-btn">
+      <img src="IMG/hamburger-icon.png" alt="เมนู" class="hamburger-img">
+    </button>
+  </header>
+  <!-- Side menu -->
+  <nav id="side-menu" class="side-menu">
+    <button id="close-menu" class="close-menu">×</button>
+    <a href="index.html">หน้าแรก</a>
+    <a href="portfolio.html">ผลงาน</a>
+    <a href="experience.html">ประสบการณ์ & ทักษะ</a>
+    <a href="contact.html">ติดต่อ</a>
+    <a href="honor.html">เกียรติประวัติ</a>
+  </nav>
+  <div id="menu-overlay" class="menu-overlay"></div>
+  <main class="container main-container">
     <section class="profile-section">
       <img src="IMG/รูปโปรไฟล์.png" alt="รูปโปรไฟล์" class="profile-img" />
       <div class="profile-info">
@@ -42,34 +42,30 @@
       สวัสดีครับ ผมเป็นนักเรียนคนหนึ่งที่เรียนอยู่ ม.6 ผมขับรถได้และสามารถทำงานช่างได้เล็กน้อยถึงปานกลาง ตอนนี้ผมมีเป้าหมายคือ อยากมีมหาลัยเรียน ถ้าได้จุฬาก็ดูเฟี้ยวดี แต่จริงๆก็คงเป็นมหาวิทยาลัยธรรมศาสตร์หรือเกษตรศาสตร์
     </div>
   </main>
- <script>
-  const hamburgerBtn = document.getElementById('hamburger-btn');
-  const sideMenu = document.getElementById('side-menu');
-  const closeMenu = document.getElementById('close-menu');
-  const overlay = document.getElementById('menu-overlay');
+  <script>
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const sideMenu = document.getElementById('side-menu');
+    const closeMenu = document.getElementById('close-menu');
+    const overlay = document.getElementById('menu-overlay');
 
-  hamburgerBtn.addEventListener('click', function() {
-    sideMenu.classList.add('show');
-    overlay.classList.add('show');
-  });
-
-  closeMenu.addEventListener('click', function() {
-    sideMenu.classList.remove('show');
-    overlay.classList.remove('show');
-  });
-
-  overlay.addEventListener('click', function() {
-    sideMenu.classList.remove('show');
-    overlay.classList.remove('show');
-  });
-
-  // ปิดด้วย esc
-  document.addEventListener('keydown', function(e) {
-    if (e.key === "Escape") {
+    hamburgerBtn.addEventListener('click', function() {
+      sideMenu.classList.add('show');
+      overlay.classList.add('show');
+    });
+    closeMenu.addEventListener('click', function() {
       sideMenu.classList.remove('show');
       overlay.classList.remove('show');
-    }
-  });
-</script>
+    });
+    overlay.addEventListener('click', function() {
+      sideMenu.classList.remove('show');
+      overlay.classList.remove('show');
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape") {
+        sideMenu.classList.remove('show');
+        overlay.classList.remove('show');
+      }
+    });
+  </script>
 </body>
 </html>
