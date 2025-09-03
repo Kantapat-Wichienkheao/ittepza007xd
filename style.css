@@ -536,7 +536,7 @@ body {
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* ซ้าย logo, ขวา hamburger */
+  justify-content: space-between; /* logo ซ้าย, hamburger ขวา */
   font-size: 1.25rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
@@ -564,7 +564,7 @@ body {
 .side-menu {
   position: fixed;
   top: 0;
-  left: -28vw; /* ซ่อนเมนู */
+  left: -28vw;
   width: 28vw;
   min-width: 220px;
   max-width: 340px;
@@ -623,7 +623,6 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
-
 /* Responsive สำหรับมือถือ */
 @media (max-width: 700px) {
   .side-menu {
