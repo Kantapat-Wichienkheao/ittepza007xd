@@ -421,6 +421,100 @@ body {
 .contact-info-box a:hover {
   text-decoration: underline;
 }
+.honor-container {
+  background: #e3f7ff;
+  box-shadow: 0 6px 30px rgba(59,132,158,0.10);
+}
+.honor-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #3b849e;
+  margin-bottom: 2.2rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.honor-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.2rem;
+}
+.honor-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #eafaff;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(59,132,158,0.07);
+  padding: 1.2rem 1.2rem 0.7rem 1.2rem;
+}
+.honor-full {
+  width: 100%;
+  max-width: 400px;
+}
+.honor-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+.honor-half {
+  max-width: 260px;
+  width: 100%;
+}
+.honor-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 0.7rem;
+  box-shadow: 0 2px 14px rgba(59,132,158,0.12);
+  background: #fff;
+  border: 1.5px solid #bce6f8;
+  object-fit: contain;
+}
+.honor-img-full {
+  max-width: 330px;
+  height: auto;
+}
+.honor-img-half {
+  max-width: 210px;
+  height: auto;
+}
+.honor-desc {
+  font-size: 1.15rem;
+  color: #223;
+  text-align: center;
+  line-height: 1.7;
+  font-weight: 500;
+  margin-top: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+@media (max-width: 700px) {
+  .honor-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .honor-half {
+    max-width: 98%;
+  }
+  .honor-img-half {
+    max-width: 95vw;
+  }
+  .honor-img-full {
+    max-width: 95vw;
+  }
+}
+@media (max-width: 600px) {
+  .honor-title {
+    font-size: 1.3rem;
+  }
+  .honor-desc {
+    font-size: 1rem;
+  }
+  .honor-item {
+    padding: 0.8rem 0.2rem;
+  }
+}
 @media (max-width: 600px) {
   .container {
     padding: 1.2rem;
