@@ -564,22 +564,32 @@ body {
 .side-menu {
   position: fixed;
   top: 0;
-  left: -28vw;
+  right: -28vw; /* เปลี่ยนจาก left เป็น right เพื่อออกทางขวา */
   width: 28vw;
   min-width: 220px;
   max-width: 340px;
   height: 100vh;
   background: #3089a9;
-  box-shadow: 2px 0 18px rgba(59,132,158, 0.18);
+  box-shadow: -2px 0 18px rgba(59,132,158, 0.18);
   z-index: 2000;
   display: flex;
   flex-direction: column;
   padding: 2rem 1.2rem 1.2rem 1.2rem;
-  transition: left 0.32s cubic-bezier(.85,0,.15,1);
+  transition: right 0.32s cubic-bezier(.85,0,.15,1);
 }
 .side-menu.show {
-  left: 0;
+  right: 0; /* เลื่อนออกมาทางขวา */
 }
+@media (max-width: 700px) {
+  .side-menu {
+    width: 75vw;
+    right: -75vw;
+    min-width: 0;
+    max-width: 100vw;
+  }
+  .side-menu.show {
+    right: 0;
+  }
 .side-menu a {
   background: #b3e2f2;
   border-radius: 22px;
@@ -622,17 +632,6 @@ body {
 .menu-overlay.show {
   opacity: 1;
   pointer-events: auto;
+ }
 }
-/* Responsive สำหรับมือถือ */
-@media (max-width: 700px) {
-  .side-menu {
-    width: 75vw;
-    min-width: 0;
-    max-width: 100vw;
-    padding-top: 2.2rem;
-    left: -75vw;
-  }
-  .side-menu.show {
-    left: 0;
-  }
-}
+
